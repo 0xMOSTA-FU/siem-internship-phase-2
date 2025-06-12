@@ -167,7 +167,7 @@ Each environment may log the same event in a different way. For example:
 * One system might use `AccountName`, another uses `user.name`.
 * If you don’t map correctly, your rule won’t match any events.
 
-![image](https://github.com/user-attachments/assets/035c4969-1931-4334-88bb-c3f242009731)
+![image](https://github.com/user-attachments/assets/7441f4ef-8ffa-4eba-a8b2-a1ac32576ea4)
 
 ---
 
