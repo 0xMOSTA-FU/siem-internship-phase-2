@@ -17,38 +17,37 @@ My goal was to simulate common attack techniques, understand their forensic foot
 This repository is organized to provide a clear, scenario-based walkthrough of the detection engineering process.
 
 My_SOC_Detection_Project/
-
 ├── Scenarios/
-│   ├── Scenario_1_Privilege_Escalation/
-│   │   ├── detection-report.md
-│   │   ├── sigma_rules.yml          (Bonus Challenge)
-│   │   ├── splunk_queries.spl       (Bonus Challenge)
-│   │   ├── screenshots/             (Folder for all related images)
-│   │   └── logs/                    (Folder for sample log files)
-│   ├── Scenario_2_Lateral_Movement/
-│   │   ├── detection-report.md
-│   │   ├── sigma_rules.yml
-│   │   ├── splunk_queries.spl
-│   │   ├── screenshots/
-│   │   └── logs/
-│   ├── Scenario_3_Suspicious_Download_Execution/
-│   │   ├── detection-report.md
-│   │   ├── sigma_rules.yml
-│   │   ├── splunk_queries.spl
-│   │   ├── screenshots/
-│   │   └── logs/
-│   ├── Scenario_4_Abnormal_User_Behavior/
-│   │   ├── detection-report.md
-│   │   ├── sigma_rules.yml
-│   │   ├── splunk_queries.spl
-│   │   ├── screenshots/
-│   │   └── logs/
-│   └── Scenario_5_C2_Beaconing/
-│       ├── detection-report.md
-│       ├── sigma_rules.yml
-│       ├── splunk_queries.spl
-│       ├── screenshots/
-│       └── logs/
+│ ├── Scenario_1_Privilege_Escalation/
+│ │ ├── detection-report.md
+│ │ ├── sigma_rules.yml
+│ │ ├── splunk_queries.spl
+│ │ ├── screenshots/
+│ │ └── logs/
+│ ├── Scenario_2_Lateral_Movement/
+│ │ ├── detection-report.md
+│ │ ├── sigma_rules.yml
+│ │ ├── splunk_queries.spl
+│ │ ├── screenshots/
+│ │ └── logs/
+│ ├── Scenario_3_Suspicious_Download_Execution/
+│ │ ├── detection-report.md
+│ │ ├── sigma_rules.yml
+│ │ ├── splunk_queries.spl
+│ │ ├── screenshots/
+│ │ └── logs/
+│ ├── Scenario_4_Abnormal_User_Behavior/
+│ │ ├── detection-report.md
+│ │ ├── sigma_rules.yml
+│ │ ├── splunk_queries.spl
+│ │ ├── screenshots/
+│ │ └── logs/
+│ └── Scenario_5_C2_Beaconing/
+│ ├── detection-report.md
+│ ├── sigma_rules.yml
+│ ├── splunk_queries.spl
+│ ├── screenshots/
+│ └── logs/
 ├── Sigma.md
 └── README.md
 
