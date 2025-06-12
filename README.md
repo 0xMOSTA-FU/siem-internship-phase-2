@@ -20,40 +20,73 @@ This repository is organized to provide a clear, scenario-based walkthrough of t
 ```md
 ## Project Structure
 
-My\_SOC\_Detection\_Project/
+More actions
+My_SOC_Detection_Project/
+
 ├── Scenarios/
-│   ├── Scenario\_1\_Privilege\_Escalation/
+│   ├── Scenario_1_Privilege_Escalation/
 │   │   ├── detection-report.md
-│   │   ├── sigma\_rules.yml
-│   │   ├── splunk\_queries.spl
+│   │   ├── sigma_rules.yml          (Bonus Challenge)
+│   │   ├── splunk_queries.spl       (Bonus Challenge)
+│   │   ├── screenshots/             (Folder for all related images)
+│   │   └── logs/                    (Folder for sample log files)
+│   ├── Scenario_2_Lateral_Movement/
+│   │   ├── detection-report.md
+│   │   ├── sigma_rules.yml
+│   │   ├── splunk_queries.spl
 │   │   ├── screenshots/
 │   │   └── logs/
-│   ├── Scenario\_2\_Lateral\_Movement/
+│   ├── Scenario_3_Suspicious_Download_Execution/
 │   │   ├── detection-report.md
-│   │   ├── sigma\_rules.yml
-│   │   ├── splunk\_queries.spl
+│   │   ├── sigma_rules.yml
+│   │   ├── splunk_queries.spl
 │   │   ├── screenshots/
 │   │   └── logs/
-│   ├── Scenario\_3\_Suspicious\_Download\_Execution/
+│   ├── Scenario_4_Abnormal_User_Behavior/
 │   │   ├── detection-report.md
-│   │   ├── sigma\_rules.yml
-│   │   ├── splunk\_queries.spl
+│   │   ├── sigma_rules.yml
+│   │   ├── splunk_queries.spl
 │   │   ├── screenshots/
 │   │   └── logs/
-│   ├── Scenario\_4\_Abnormal\_User\_Behavior/
-│   │   ├── detection-report.md
-│   │   ├── sigma\_rules.yml
-│   │   ├── splunk\_queries.spl
-│   │   ├── screenshots/
-│   │   └── logs/
-│   └── Scenario\_5\_C2\_Beaconing/
+│   └── Scenario_5_C2_Beaconing/
 │       ├── detection-report.md
-│       ├── sigma\_rules.yml
-│       ├── splunk\_queries.spl
+│       ├── sigma_rules.yml
+│       ├── splunk_queries.spl
 │       ├── screenshots/
 │       └── logs/
+│ ├── Scenario_1_Privilege_Escalation/
+│ │ ├── detection-report.md
+│ │ ├── sigma_rules.yml
+│ │ ├── splunk_queries.spl
+│ │ ├── screenshots/
+│ │ └── logs/
+│ ├── Scenario_2_Lateral_Movement/
+│ │ ├── detection-report.md
+│ │ ├── sigma_rules.yml
+│ │ ├── splunk_queries.spl
+│ │ ├── screenshots/
+│ │ └── logs/
+│ ├── Scenario_3_Suspicious_Download_Execution/
+│ │ ├── detection-report.md
+│ │ ├── sigma_rules.yml
+│ │ ├── splunk_queries.spl
+│ │ ├── screenshots/
+│ │ └── logs/
+│ ├── Scenario_4_Abnormal_User_Behavior/
+│ │ ├── detection-report.md
+│ │ ├── sigma_rules.yml
+│ │ ├── splunk_queries.spl
+│ │ ├── screenshots/
+│ │ └── logs/
+│ └── Scenario_5_C2_Beaconing/
+│ ├── detection-report.md
+│ ├── sigma_rules.yml
+│ ├── splunk_queries.spl
+│ ├── screenshots/
+│ └── logs/
 ├── Sigma.md
 └── README.md
+
 
 ```
 
