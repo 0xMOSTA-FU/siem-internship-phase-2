@@ -54,36 +54,6 @@ My_SOC_Detection_Project/
 │       ├── splunk_queries.spl
 │       ├── screenshots/
 │       └── logs/
-│ ├── Scenario_1_Privilege_Escalation/
-│ │ ├── detection-report.md
-│ │ ├── sigma_rules.yml
-│ │ ├── splunk_queries.spl
-│ │ ├── screenshots/
-│ │ └── logs/
-│ ├── Scenario_2_Lateral_Movement/
-│ │ ├── detection-report.md
-│ │ ├── sigma_rules.yml
-│ │ ├── splunk_queries.spl
-│ │ ├── screenshots/
-│ │ └── logs/
-│ ├── Scenario_3_Suspicious_Download_Execution/
-│ │ ├── detection-report.md
-│ │ ├── sigma_rules.yml
-│ │ ├── splunk_queries.spl
-│ │ ├── screenshots/
-│ │ └── logs/
-│ ├── Scenario_4_Abnormal_User_Behavior/
-│ │ ├── detection-report.md
-│ │ ├── sigma_rules.yml
-│ │ ├── splunk_queries.spl
-│ │ ├── screenshots/
-│ │ └── logs/
-│ └── Scenario_5_C2_Beaconing/
-│ ├── detection-report.md
-│ ├── sigma_rules.yml
-│ ├── splunk_queries.spl
-│ ├── screenshots/
-│ └── logs/
 ├── Sigma.md
 └── README.md
 
