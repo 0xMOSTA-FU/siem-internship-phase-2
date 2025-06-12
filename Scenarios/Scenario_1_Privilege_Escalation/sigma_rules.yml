@@ -1,0 +1,65 @@
+title: New Administrator Account Creation
+id: 001_priv_esc_new_admin_account
+status: experimental
+description: Detects the creation of a new user account followed by its addition to the local administrators group, a common privilege escalation technique.
+references:
+    - https://attack.mitre.org/techniques/T1055/
+    - https://attack.mitre.org/techniques/T1547/
+author: Mostafa Essam 0xMOSTA
+date: 2025/06/12
+tags:
+    - attack.privilege_escalation
+    - attack.t1055
+    - attack.t1547
+    - windows
+logsource:
+    category: audit_security
+    service: security
+detection:
+    # Rule 1: User account created
+    selection_account_created:
+        EventID: 4720
+        TargetUserName|contains: ['backdoor', 'newadmin', 'testuser'] # Add specific suspicious usernames if known
+    # Rule 2: User added to Administrators group
+    selection_group_added:
+        EventID: 4728
+        TargetUserName: 'Administrators'
+        MemberName|startswith: ['backdoor', 'newadmin', 'testuser'] # Correlate with created username
+    # Rule 3: Process create for net.exe with admin group modification
+    selection_net_exe:
+        EventID: 1 # Sysmon Event ID for Process Create
+        Image|endswith: '\net.exe'
+        CommandLine|contains:
+            - 'user /add'
+            - 'localgroup administrators /add'
+    condition: all of (selection_account_created, selection_group_added) or selection_net_exe
+falsepositives:
+    - Legitimate administrative tasks (manual review needed)
+    - Automated system provisioning (should be excluded by whitelisting)
+level: high
+
+---
+
+title: Special Privileges Assigned During Logon
+id: 002_priv_esc_special_logon
+status: experimental
+description: Detects a successful logon where an account is assigned special privileges, often indicating an administrative logon or a privileged account.
+references:
+    - https://attack.mitre.org/techniques/T1055/
+author: Mostafa Essam 0xMOSTA
+date: 2025/06/12
+tags:
+    - attack.privilege_escalation
+    - windows
+logsource:
+    category: audit_security
+    service: security
+detection:
+    selection:
+        EventID: 4672
+        # PrivilegeList indicates various special privileges. SeTcbPrivilege is a strong indicator of admin.
+        PrivilegeList|contains: 'SeTcbPrivilege' # Act as part of the operating system
+    condition: selection
+falsepositives:
+    - Service accounts or legitimate administrative processes may exhibit this behavior. Requires baseline.
+level: medium
