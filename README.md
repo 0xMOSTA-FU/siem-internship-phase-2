@@ -1,5 +1,13 @@
 #  My SOC Detection Engineering Project-Phase2
 
+------
+> Very important note: what you’ll see here is a mix of examples, templates, queries, and general ideas—alongside the actual work, implementations, and real
+> examples we applied ourselves.
+> The real implementation parts will be shown with screenshots from our lab.
+> You may also find some general and expected examples included in the broader explanation.
+
+-----
+
 ## Overview
 
 Welcome to my **SOC Detection Engineering Project**! This repository showcases my practical experience in developing, testing, and documenting detection rules for various cybersecurity attack scenarios. The project focuses on leveraging Windows Security Logs and Sysmon events, ingested into an Elastic Stack (Kibana), to proactively identify and alert on malicious activities within an enterprise environment.
