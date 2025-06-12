@@ -89,7 +89,8 @@ Based on our analysis, we developed the following detection rules:
 * We confirmed that both "New Administrative Account Creation" and "Direct `net.exe` Admin Group Modification" rules triggered alerts in Kibana.
 * We validated that the `Event ID 4672` (if we logged in with the new admin account) appeared in the logs, providing further context.
 
-##  Screenshots
+##  Screenshots from our lab along with the explanation.
+
 add soon
 
 ##  Recommendations for Mitigation & Prevention
