@@ -20,8 +20,6 @@ This repository is organized to provide a clear, scenario-based walkthrough of t
 ```md
 ## Project Structure
 
-```
-
 My\_SOC\_Detection\_Project/
 ├── Scenarios/
 │   ├── Scenario\_1\_Privilege\_Escalation/
@@ -58,7 +56,7 @@ My\_SOC\_Detection\_Project/
 └── README.md
 
 ```
-```
+
 ## Technologies Used
 
 * **Operating System:** Windows 10 (for attack simulation and log generation)
