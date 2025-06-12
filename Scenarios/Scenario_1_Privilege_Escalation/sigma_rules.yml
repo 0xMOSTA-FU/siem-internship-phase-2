@@ -19,12 +19,12 @@ detection:
     # Rule 1: User account created
     selection_account_created:
         EventID: 4720
-        TargetUserName|contains: ['backdoor', 'newadmin', 'testuser'] # Add specific suspicious usernames if known
+        TargetUserName|contains: ['backdoor', 'newadmin', 'testuser', 'mostafa'] # Add specific suspicious usernames if known
     # Rule 2: User added to Administrators group
     selection_group_added:
         EventID: 4728
         TargetUserName: 'Administrators'
-        MemberName|startswith: ['backdoor', 'newadmin', 'testuser'] # Correlate with created username
+        MemberName|startswith: ['backdoor', 'newadmin', 'testuser', 'mostafa'] # Correlate with created username
     # Rule 3: Process create for net.exe with admin group modification
     selection_net_exe:
         EventID: 1 # Sysmon Event ID for Process Create
