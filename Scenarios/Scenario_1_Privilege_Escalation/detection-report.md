@@ -111,7 +111,7 @@ Based on this scenario, here are key recommendations to harden defenses against 
 * **Patch Management:** Keep operating systems and applications updated to remediate vulnerabilities attackers might exploit for privilege escalation.
 
 ##  Sample Logs and Queries Used
-*(Place your actual raw JSON log entries and the KQL queries that worked for you here.)*
+*messenge for me* *(Place your actual raw JSON log entries and the KQL queries that worked for you here.)* *don’t Forget plz*
 
 **Sample Log (Windows Security Event ID 4720 - Account Creation):**
 ```json
