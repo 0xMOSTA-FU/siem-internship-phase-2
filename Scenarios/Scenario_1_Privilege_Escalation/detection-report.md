@@ -1,3 +1,12 @@
+
+------
+> Very important note: what you’ll see here is a mix of examples, templates, queries, and general ideas—alongside the actual work, implementations, and real
+> examples we applied ourselves.
+> The real implementation parts will be shown with screenshots from our lab.
+> You may also find some general and expected examples included in the broader explanation.
+
+-----
+
 # Scenario 1: Privilege Escalation Attempt (MITRE T1055 / T1547)
 
 ##  Objective
