@@ -16,41 +16,49 @@ My goal was to simulate common attack techniques, understand their forensic foot
 
 This repository is organized to provide a clear, scenario-based walkthrough of the detection engineering process.
 
-My_SOC_Detection_Project/
+
+```md
+## Project Structure
+
+```
+
+My\_SOC\_Detection\_Project/
 ├── Scenarios/
-│ ├── Scenario_1_Privilege_Escalation/
-│ │ ├── detection-report.md
-│ │ ├── sigma_rules.yml
-│ │ ├── splunk_queries.spl
-│ │ ├── screenshots/
-│ │ └── logs/
-│ ├── Scenario_2_Lateral_Movement/
-│ │ ├── detection-report.md
-│ │ ├── sigma_rules.yml
-│ │ ├── splunk_queries.spl
-│ │ ├── screenshots/
-│ │ └── logs/
-│ ├── Scenario_3_Suspicious_Download_Execution/
-│ │ ├── detection-report.md
-│ │ ├── sigma_rules.yml
-│ │ ├── splunk_queries.spl
-│ │ ├── screenshots/
-│ │ └── logs/
-│ ├── Scenario_4_Abnormal_User_Behavior/
-│ │ ├── detection-report.md
-│ │ ├── sigma_rules.yml
-│ │ ├── splunk_queries.spl
-│ │ ├── screenshots/
-│ │ └── logs/
-│ └── Scenario_5_C2_Beaconing/
-│ ├── detection-report.md
-│ ├── sigma_rules.yml
-│ ├── splunk_queries.spl
-│ ├── screenshots/
-│ └── logs/
+│   ├── Scenario\_1\_Privilege\_Escalation/
+│   │   ├── detection-report.md
+│   │   ├── sigma\_rules.yml
+│   │   ├── splunk\_queries.spl
+│   │   ├── screenshots/
+│   │   └── logs/
+│   ├── Scenario\_2\_Lateral\_Movement/
+│   │   ├── detection-report.md
+│   │   ├── sigma\_rules.yml
+│   │   ├── splunk\_queries.spl
+│   │   ├── screenshots/
+│   │   └── logs/
+│   ├── Scenario\_3\_Suspicious\_Download\_Execution/
+│   │   ├── detection-report.md
+│   │   ├── sigma\_rules.yml
+│   │   ├── splunk\_queries.spl
+│   │   ├── screenshots/
+│   │   └── logs/
+│   ├── Scenario\_4\_Abnormal\_User\_Behavior/
+│   │   ├── detection-report.md
+│   │   ├── sigma\_rules.yml
+│   │   ├── splunk\_queries.spl
+│   │   ├── screenshots/
+│   │   └── logs/
+│   └── Scenario\_5\_C2\_Beaconing/
+│       ├── detection-report.md
+│       ├── sigma\_rules.yml
+│       ├── splunk\_queries.spl
+│       ├── screenshots/
+│       └── logs/
 ├── Sigma.md
 └── README.md
 
+```
+```
 ## Technologies Used
 
 * **Operating System:** Windows 10 (for attack simulation and log generation)
