@@ -17,6 +17,7 @@ My goal was to simulate common attack techniques, understand their forensic foot
 This repository is organized to provide a clear, scenario-based walkthrough of the detection engineering process.
 
 My_SOC_Detection_Project/
+
 ├── Scenarios/
 │   ├── Scenario_1_Privilege_Escalation/
 │   │   ├── detection-report.md
