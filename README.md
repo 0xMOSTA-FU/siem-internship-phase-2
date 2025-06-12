@@ -100,7 +100,7 @@ Each scenario folder (`Scenarios/Scenario_X_...`) contains a detailed `detection
 1.  **Scenario 1: Privilege Escalation**
     * **Techniques:** T1055 (Process Injection), T1547 (Boot or Logon Autostart Execution) - specifically, creating new admin accounts.
     * **Focus:** Detecting the creation of new administrative accounts and their addition to privileged groups using `net.exe` commands.
-    * [Explore the detailed detection report for Privilege Escalation] (/Scenarios/Scenario_1_Privilege_Escalation/detection-report.md](https://github.com/0xMOSTA-FU/siem-internship-phase-2/blob/main/Scenarios/Scenario_1_Privilege_Escalation/detection-report.md)
+    * [Explore the detailed detection report for Privilege Escalation](https://github.com/0xMOSTA-FU/siem-internship-phase-2/blob/main/Scenarios/Scenario_1_Privilege_Escalation/detection-report.md)
 
 2.  **Scenario 2: Lateral Movement**
     * **Techniques:** T1021.002 (Remote Services: SMB/Windows Admin Shares), T1021.006 (Remote Services: Windows Management Instrumentation).
