@@ -1,0 +1,296 @@
+<Sysmon schemaversion="4.90">
+  <EventFiltering>
+    <ProcessCreate onmatch="exclude">
+      <Image condition="end with">svchost.exe</Image>
+      <Image condition="end with">dllhost.exe</Image>
+      <Image condition="end with">audiodg.exe</Image>
+      <Image condition="end with">csrss.exe</Image>
+      <Image condition="end with">smss.exe</Image>
+      <Image condition="end with">wininit.exe</Image>
+      <Image condition="end with">explorer.exe</Image>
+      <Image condition="end with">ApplicationFrameHost.exe</Image>
+      <Image condition="end with">ShellExperienceHost.exe</Image>
+      <Image condition="end with">RuntimeBroker.exe</Image>
+      <Image condition="end with">SearchIndexer.exe</Image>
+      <Image condition="end with">SearchHost.exe</Image>
+      <Image condition="end with">SecurityHealthService.exe</Image>
+      <Image condition="end with">MsMpEng.exe</Image>
+      <Image condition="end with">NisSrv.exe</Image>
+      <Image condition="end with">CompatTelRunner.exe</Image>
+      <Image condition="end with">backgroundTaskHost.exe</Image>
+      <Image condition="end with">conhost.exe</Image>
+      <Image condition="end with">dwm.exe</Image>
+      <Image condition="end with">fontdrvhost.exe</Image>
+      <Image condition="end with">lsass.exe</Image>
+      <Image condition="end with">lsm.exe</Image>
+      <Image condition="end with">mscorsvw.exe</Image>
+      <Image condition="end with">SettingSyncHost.exe</Image>
+      <Image condition="end with">SystemSettings.exe</Image>
+      <Image condition="end with">taskhostw.exe</Image>
+      <Image condition="end with">unsecapp.exe</Image>
+      <Image condition="end with">WmiPrvSE.exe</Image>
+      <Image condition="end with">WUDFHost.exe</Image>
+      <Image condition="end with">spoolsv.exe</Image>
+      <Image condition="end with">OneDrive.exe</Image> <Image condition="end with">Code.exe</Image> <Image condition="end with">firefox.exe</Image>
+      <Image condition="end with">chrome.exe</Image>
+      <Image condition="end with">msedge.exe</Image>
+      <Image condition="end with">Discord.exe</Image>
+      <Image condition="end with">Spotify.exe</Image>
+      <Image condition="end with">Steam.exe</Image>
+      <Image condition="end with">steamwebhelper.exe</Image>
+      <Image condition="end with">EpicGamesLauncher.exe</Image>
+      <Image condition="end with">Telegram.exe</Image>
+      <Image condition="end with">WhatsApp.exe</Image>
+      <Image condition="end with">SearchApp.exe</Image>
+      <Image condition="end with">ctfmon.exe</Image>
+      <Image condition="end with">nvcontainer.exe</Image>
+      <Image condition="end with">nvidia web helper.exe</Image>
+      <Image condition="end with">NVDisplay.Container.exe</Image>
+      <Image condition="end with">NVDisplay.Container.NVAPIBridge.exe</Image>
+      <Image condition="end with">NvBackend.exe</Image>
+      <Image condition="end with">RtkAudUService64.exe</Image>
+      <Image condition="end with">RtkAudioService.exe</Image>
+      <Image condition="end with">RtkBtMan.exe</Image>
+      <Image condition="end with">RtkNGUI64.exe</Image>
+      <Image condition="end with">Realtek HD Audio Background Process.exe</Image>
+      <Image condition="end with">audiodg.exe</Image>
+      <Image condition="end with">WavesSvc64.exe</Image>
+      <Image condition="end with">NahimicService.exe</Image>
+      <Image condition="end with">NahimicUpdater.exe</Image>
+      <Image condition="end with">Nahimic.exe</Image>
+      <Image condition="end with">msdtc.exe</Image>
+      <Image condition="end with">mmc.exe</Image>
+      <Image condition="end with">cmd.exe</Image>
+      <Image condition="end with">powershell.exe</Image>
+      <Image condition="end with">pwsh.exe</Image>
+      <Image condition="end with">wscript.exe</Image>
+      <Image condition="end with">cscript.exe</Image>
+      <ParentImage condition="end with">explorer.exe</ParentImage>
+      <ParentImage condition="end with">winlogon.exe</ParentImage>
+      <ParentImage condition="end with">userinit.exe</ParentImage>
+      <ParentImage condition="end with">services.exe</ParentImage>
+      <ParentImage condition="end with">smss.exe</ParentImage>
+      <ParentImage condition="end with">System</ParentImage>
+    </ProcessCreate>
+
+    <FileCreateTime onmatch="exclude">
+      <Image condition="end with">svchost.exe</Image>
+      <Image condition="end with">explorer.exe</Image>
+      <Image condition="end with">audiodg.exe</Image>
+      <TargetFilename condition="contains">AppData\Local\Temp</TargetFilename>
+    </FileCreateTime>
+
+    <NetworkConnect onmatch="exclude">
+      <Image condition="end with">svchost.exe</Image>
+      <Image condition="end with">explorer.exe</Image>
+      <Image condition="end with">firefox.exe</Image>
+      <Image condition="end with">chrome.exe</Image>
+      <Image condition="end with">msedge.exe</Image>
+      <Image condition="end with">OneDrive.exe</Image>
+      <Image condition="end with">Code.exe</Image>
+      <Image condition="end with">Discord.exe</Image>
+      <Image condition="end with">Spotify.exe</Image>
+      <Image condition="end with">Steam.exe</Image>
+      <Image condition="end with">steamwebhelper.exe</Image>
+      <Image condition="end with">EpicGamesLauncher.exe</Image>
+      <Image condition="end with">Telegram.exe</Image>
+      <Image condition="end with">WhatsApp.exe</Image>
+      <Image condition="end with">MsMpEng.exe</Image>
+      <Image condition="end with">NisSrv.exe</Image>
+      <DestinationPort condition="is">80</DestinationPort>
+      <DestinationPort condition="is">443</DestinationPort>
+      <DestinationPort condition="is">53</DestinationPort> <DestinationPort condition="is">137</DestinationPort> <DestinationPort condition="is">138</DestinationPort> <DestinationPort condition="is">139</DestinationPort> <DestinationPort condition="is">445</DestinationPort> <DestinationIp condition="is">127.0.0.1</DestinationIp>
+      <DestinationIp condition="is">::1</DestinationIp>
+      <DestinationIp condition="is">0.0.0.0</DestinationIp>
+      <DestinationIp condition="is">255.255.255.255</DestinationIp>
+      <DestinationIp condition="begin with">192.168.</DestinationIp>
+      <DestinationIp condition="begin with">172.16.</DestinationIp>
+      <DestinationIp condition="begin with">10.</DestinationIp>
+    </NetworkConnect>
+
+    <ProcessTerminate onmatch="exclude">
+      <Image condition="end with">svchost.exe</Image>
+      <Image condition="end with">dllhost.exe</Image>
+      <Image condition="end with">explorer.exe</Image>
+      <Image condition="end with">ApplicationFrameHost.exe</Image>
+      <Image condition="end with">ShellExperienceHost.exe</Image>
+      <Image condition="end with">RuntimeBroker.exe</Image>
+      <Image condition="end with">SearchIndexer.exe</Image>
+      <Image condition="end with">SearchHost.exe</Image>
+      <Image condition="end with">SecurityHealthService.exe</Image>
+      <Image condition="end with">MsMpEng.exe</Image>
+      <Image condition="end with">NisSrv.exe</Image>
+      <Image condition="end with">CompatTelRunner.exe</Image>
+      <Image condition="end with">backgroundTaskHost.exe</Image>
+      <Image condition="end with">conhost.exe</Image>
+      <Image condition="end with">dwm.exe</Image>
+      <Image condition="end with">fontdrvhost.exe</Image>
+      <Image condition="end with">mscorsvw.exe</Image>
+      <Image condition="end with">SettingSyncHost.exe</Image>
+      <Image condition="end with">SystemSettings.exe</Image>
+      <Image condition="end with">taskhostw.exe</Image>
+      <Image condition="end with">unsecapp.exe</Image>
+      <Image condition="end with">WmiPrvSE.exe</Image>
+      <Image condition="end with">WUDFHost.exe</Image>
+      <Image condition="end with">OneDrive.exe</Image>
+      <Image condition="end with">Code.exe</Image>
+      <Image condition="end with">firefox.exe</Image>
+      <Image condition="end with">chrome.exe</Image>
+      <Image condition="end with">msedge.exe</Image>
+      <Image condition="end with">Discord.exe</Image>
+      <Image condition="end with">Spotify.exe</Image>
+      <Image condition="end with">Steam.exe</Image>
+      <Image condition="end with">steamwebhelper.exe</Image>
+      <Image condition="end with">EpicGamesLauncher.exe</Image>
+      <Image condition="end with">Telegram.exe</Image>
+      <Image condition="end with">WhatsApp.exe</Image>
+      <Image condition="end with">SearchApp.exe</Image>
+      <Image condition="end with">ctfmon.exe</Image>
+      <Image condition="end with">nvcontainer.exe</Image>
+      <Image condition="end with">nvidia web helper.exe</Image>
+      <Image condition="end with">NVDisplay.Container.exe</Image>
+      <Image condition="end with">NVDisplay.Container.NVAPIBridge.exe</Image>
+      <Image condition="end with">NvBackend.exe</Image>
+      <Image condition="end with">RtkAudUService64.exe</Image>
+      <Image condition="end with">RtkAudioService.exe</Image>
+      <Image condition="end with">RtkBtMan.exe</Image>
+      <Image condition="end with">RtkNGUI64.exe</Image>
+      <Image condition="end with">Realtek HD Audio Background Process.exe</Image>
+      <Image condition="end with">audiodg.exe</Image>
+      <Image condition="end with">WavesSvc64.exe</Image>
+      <Image condition="end with">NahimicService.exe</Image>
+      <Image condition="end with">NahimicUpdater.exe</Image>
+      <Image condition="end with">Nahimic.exe</Image>
+    </ProcessTerminate>
+
+    <FileCreate onmatch="exclude">
+      <TargetFilename condition="contains">AppData\Local\Temp</TargetFilename>
+      <TargetFilename condition="contains">C:\Windows\Temp</TargetFilename>
+      <TargetFilename condition="end with">.tmp</TargetFilename>
+      <TargetFilename condition="end with">.log</TargetFilename>
+      <TargetFilename condition="end with">.etl</TargetFilename>
+      <TargetFilename condition="end with">.pf</TargetFilename>
+      <TargetFilename condition="end with">.dmp</TargetFilename>
+      <Image condition="end with">svchost.exe</Image>
+      <Image condition="end with">explorer.exe</Image>
+      <Image condition="end with">chrome.exe</Image>
+      <Image condition="end with">firefox.exe</Image>
+      <Image condition="end with">msedge.exe</Image>
+    </FileCreate>
+
+    <RegistryEvent onmatch="exclude">
+      <TargetObject condition="begin with">HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Run</TargetObject>
+      <TargetObject condition="begin with">HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Run</TargetObject>
+      <TargetObject condition="begin with">HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\RunOnce</TargetObject>
+      <TargetObject condition="begin with">HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\RunOnce</TargetObject>
+      <Image condition="end with">svchost.exe</Image>
+      <Image condition="end with">explorer.exe</Image>
+      <Image condition="end with">OneDrive.exe</Image>
+      <Image condition="end with">chrome.exe</Image>
+      <Image condition="end with">firefox.exe</Image>
+      <Image condition="end with">msedge.exe</Image>
+    </RegistryEvent>
+
+    <RegistryEvent onmatch="exclude">
+      <TargetObject condition="begin with">HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Run</TargetObject>
+      <TargetObject condition="begin with">HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Run</TargetObject>
+      <TargetObject condition="begin with">HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\RunOnce</TargetObject>
+      <TargetObject condition="begin with">HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\RunOnce</TargetObject>
+      <Image condition="end with">svchost.exe</Image>
+      <Image condition="end with">explorer.exe</Image>
+      <Image condition="end with">OneDrive.exe</Image>
+      <Image condition="end with">chrome.exe</Image>
+      <Image condition="end with">firefox.exe</Image>
+      <Image condition="end with">msedge.exe</Image>
+    </RegistryEvent>
+
+    <RegistryEvent onmatch="exclude">
+      <Image condition="end with">svchost.exe</Image>
+      <Image condition="end with">explorer.exe</Image>
+      <Image condition="end with">OneDrive.exe</Image>
+    </RegistryEvent>
+
+    <FileCreateStreamHash onmatch="exclude">
+      <TargetFilename condition="contains">AppData\Local\Temp</TargetFilename>
+      <TargetFilename condition="contains">C:\Windows\Temp</TargetFilename>
+      <Image condition="end with">chrome.exe</Image>
+      <Image condition="end with">firefox.exe</Image>
+      <Image condition="end with">msedge.exe</Image>
+      <Image condition="end with">OneDrive.exe</Image>
+    </FileCreateStreamHash>
+
+    <PipeEvent onmatch="exclude">
+      <EventType condition="is">CreatePipe</EventType>
+      <PipeName condition="begin with">\lsass</PipeName>
+      <PipeName condition="begin with">\scvchost</PipeName>
+      <PipeName condition="begin with">\windows\system32\com\dcomcnfg</PipeName>
+      <Image condition="end with">svchost.exe</Image>
+      <Image condition="end with">lsass.exe</Image>
+      <Image condition="end with">explorer.exe</Image>
+    </PipeEvent>
+
+    <PipeEvent onmatch="exclude">
+      <EventType condition="is">ConnectPipe</EventType>
+      <PipeName condition="begin with">\lsass</PipeName>
+      <PipeName condition="begin with">\scvchost</PipeName>
+      <PipeName condition="begin with">\windows\system32\com\dcomcnfg</PipeName>
+      <Image condition="end with">svchost.exe</Image>
+      <Image condition="end with">lsass.exe</Image>
+      <Image condition="end with">explorer.exe</Image>
+    </PipeEvent>
+
+    <WmiEvent onmatch="exclude">
+      <EventType condition="is">EventFilter</EventType>
+      <Operation condition="is">Created</Operation>
+      <Query condition="contains">SELECT * FROM __InstanceCreationEvent WITHIN 5 WHERE TargetInstance ISA 'Win32_Service' AND TargetInstance.State='Stopped' AND TargetInstance.DisplayName='Sysmon'</Query>
+    </WmiEvent>
+
+    <WmiEvent onmatch="exclude">
+      <EventType condition="is">EventConsumer</EventType>
+      <Operation condition="is">Created</Operation>
+    </WmiEvent>
+
+    <WmiEvent onmatch="exclude">
+      <EventType condition="is">EventConsumerToFilter</EventType>
+      <Operation condition="is">Created</Operation>
+    </WmiEvent>
+
+    <DnsQuery onmatch="exclude">
+      <Image condition="end with">svchost.exe</Image>
+      <Image condition="end with">explorer.exe</Image>
+      <Image condition="end with">chrome.exe</Image>
+      <Image condition="end with">firefox.exe</Image>
+      <Image condition="end with">msedge.exe</Image>
+      <Image condition="end with">OneDrive.exe</Image>
+      <QueryName condition="end with">.microsoft.com</QueryName>
+      <QueryName condition="end with">.windowsupdate.com</QueryName>
+      <QueryName condition="end with">.cdn.microsoft.com</QueryName>
+      <QueryName condition="end with">.google.com</QueryName>
+      <QueryName condition="end with">.gstatic.com</QueryName>
+      <QueryName condition="end with">.bing.com</QueryName>
+      <QueryName condition="end with">.akamaiedge.net</QueryName>
+      <QueryName condition="end with">.s.youtube.com</QueryName>
+      <QueryName condition="end with">.discordapp.com</QueryName>
+      <QueryName condition="end with">.spotify.com</QueryName>
+      <QueryName condition="end with">.steamcommunity.com</QueryName>
+      <QueryName condition="end with">.steampowered.com</QueryName>
+    </DnsQuery>
+
+    <FileDelete onmatch="exclude">
+      <TargetFilename condition="contains">AppData\Local\Temp</TargetFilename>
+      <TargetFilename condition="contains">C:\Windows\Temp</TargetFilename>
+      <TargetFilename condition="end with">.tmp</TargetFilename>
+      <TargetFilename condition="end with">.log</TargetFilename>
+      <TargetFilename condition="end with">.etl</TargetFilename>
+      <TargetFilename condition="end with">.pf</TargetFilename>
+      <TargetFilename condition="end with">.dmp</TargetFilename>
+      <Image condition="end with">svchost.exe</Image>
+      <Image condition="end with">explorer.exe</Image>
+      <Image condition="end with">chrome.exe</Image>
+      <Image condition="end with">firefox.exe</Image>
+      <Image condition="end with">msedge.exe</Image>
+      <Image condition="end with">OneDrive.exe</Image>
+    </FileDelete>
+
+    </EventFiltering>
+</Sysmon>
