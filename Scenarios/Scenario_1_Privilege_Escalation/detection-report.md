@@ -91,7 +91,14 @@ Based on our analysis, we developed the following detection rules:
 
 ##  Screenshots from our lab along with the explanation.
 
-add soon
+![Screenshot 2025-06-11 234444](https://github.com/user-attachments/assets/7658e9f3-9ebf-4b66-a920-5b8441cfd5c4)
+
+![Screenshot 2025-06-11 235001](https://github.com/user-attachments/assets/7788b8ab-7f3a-471d-80cb-853c6bf74190)
+
+![Screenshot 2025-06-11 235024](https://github.com/user-attachments/assets/2c0ef9ec-0d42-4318-83d3-7980ca90f221)
+
+![Screenshot 2025-06-11 235057](https://github.com/user-attachments/assets/55f91c92-c4f3-4c80-b31a-0b61277d4d14)
+
 
 ##  Recommendations for Mitigation & Prevention
 Based on this scenario, here are key recommendations to harden defenses against Privilege Escalation:
