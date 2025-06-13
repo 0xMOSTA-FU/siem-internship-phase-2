@@ -251,11 +251,7 @@ pip3 install sigma-cli
 ```
 
 ```powershell
-Collecting sigma
-  Downloading sigma-0.0.1-py3-none-any.whl.metadata (879 bytes)
-Downloading sigma-0.0.1-py3-none-any.whl (1.4 kB)
-Installing collected packages: sigma
-Successfully installed sigma-0.0.1
+sigma plugin list
 ```
 
 ----
