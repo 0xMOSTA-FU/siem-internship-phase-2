@@ -230,6 +230,29 @@ Whether you are writing your first detection rule or building an entire detectio
 
 ---
 
+## Install Sigma
+
+```powershell
+python --version
+```
+
+```powershell
+pip --version
+```
+
+```powershell
+pip install sigma
+```
+
+```powershell
+Collecting sigma
+  Downloading sigma-0.0.1-py3-none-any.whl.metadata (879 bytes)
+Downloading sigma-0.0.1-py3-none-any.whl (1.4 kB)
+Installing collected packages: sigma
+Successfully installed sigma-0.0.1
+```
+
+----
 ## Resources
 
 * [Sigma GitHub Repository](https://github.com/SigmaHQ/sigma)
