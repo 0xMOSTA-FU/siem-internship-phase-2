@@ -35,7 +35,7 @@ This section contains basic information about the rule:
 
 ```yaml
 status: stable
-author: Elbasa Ali
+author: Mostafa 0xMOSTA
 title: Admin Share Access
 references:
   - https://attack.mitre.org/techniques/T1077/
