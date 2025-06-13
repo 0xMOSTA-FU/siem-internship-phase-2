@@ -247,7 +247,7 @@ pip --version
 ### Third: If the previous two steps worked, try installing sigma Now:
 
 ```powershell
-pip install sigma
+pip3 install sigma-cli
 ```
 
 ```powershell
