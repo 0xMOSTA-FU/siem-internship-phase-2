@@ -244,7 +244,7 @@ python --version
 pip --version
 ```
 
-### Third: If the previous two steps worked, try installing sigma again:
+### Third: If the previous two steps worked, try installing sigma Now:
 
 ```powershell
 pip install sigma
