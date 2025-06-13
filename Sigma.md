@@ -250,6 +250,8 @@ pip --version
 pip3 install sigma-cli
 ```
 
+### Newly introduced, the sigma-cli tool now offers a selection of installable backends – through a plugin system, each designed to target a specific SIEM commonly used by users. To see which backend plugins are available, run the sigma plugin list command from the command line.
+
 ```powershell
 sigma plugin list
 ```
@@ -258,3 +260,4 @@ sigma plugin list
 ## Resources
 
 * [Sigma GitHub Repository](https://github.com/SigmaHQ/sigma)
+* (https://sigmahq.io/docs/guide/getting-started.html)
