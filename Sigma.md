@@ -232,13 +232,19 @@ Whether you are writing your first detection rule or building an entire detectio
 
 ## Install Sigma
 
+### First: Let's confirm Python itself is recognized:
+
 ```powershell
 python --version
 ```
 
+### Second: Let's confirm pip is recognized:
+
 ```powershell
 pip --version
 ```
+
+### Third: If the previous two steps worked, try installing sigma again:
 
 ```powershell
 pip install sigma
