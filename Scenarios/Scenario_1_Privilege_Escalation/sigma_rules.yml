@@ -1,5 +1,5 @@
 title: New Administrator Account Creation
-id: 001_priv_esc_new_admin_account
+id: cecd6496-2444-44ec-a239-5901432f8a7b
 status: experimental
 description: Detects the creation of a new user account followed by its addition to the local administrators group, a common privilege escalation technique.
 references:
@@ -11,7 +11,7 @@ tags:
     - attack.privilege_escalation
     - attack.t1055
     - attack.t1547
-    - windows
+    - os.windows
 logsource:
     category: audit_security
     service: security
@@ -32,7 +32,7 @@ detection:
         CommandLine|contains:
             - 'user /add'
             - 'localgroup administrators /add'
-    condition: all of (selection_account_created, selection_group_added) or selection_net_exe
+    condition: (selection_account_created and selection_group_added) or selection_net_exe
 falsepositives:
     - Legitimate administrative tasks (manual review needed)
     - Automated system provisioning (should be excluded by whitelisting)
@@ -41,7 +41,7 @@ level: high
 ---
 
 title: Special Privileges Assigned During Logon
-id: 002_priv_esc_special_logon
+id: 5b65a1d9-c9b1-47cc-95e3-e5870f399181
 status: experimental
 description: Detects a successful logon where an account is assigned special privileges, often indicating an administrative logon or a privileged account.
 references:
@@ -50,7 +50,7 @@ author: Mostafa Essam 0xMOSTA
 date: 2025/06/12
 tags:
     - attack.privilege_escalation
-    - windows
+    - os.windows
 logsource:
     category: audit_security
     service: security
