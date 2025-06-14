@@ -192,5 +192,5 @@ Based on this scenario, here are key recommendations to harden defenses against 
 
 
 
-![image](https://github.com/user-attachments/assets/04557b52-04e1-45ab-a3d6-20f0ded45ce6)
+![image](https://github.com/user-attachments/assets/ee364c5b-4283-4014-b7ac-e9b4019a5d6e)
 
