@@ -189,3 +189,8 @@ Based on this scenario, here are key recommendations to harden defenses against 
   "message": "Process Create: net.exe with command: net user backdoor /add && net localgroup administrators backdoor /add"
 }
 ```
+
+
+
+![image](https://github.com/user-attachments/assets/04557b52-04e1-45ab-a3d6-20f0ded45ce6)
+
